@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos</title>
+  <link rel="stylesheet" href="projeto.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="projetos">
+    <h2>Meus Projetos</h2>
+
+    <!-- Abas para selecionar entre Dev e Design -->
+    <div class="tabs">
+      <button class="tablink" onclick="openTab(event, 'dev')">Projetos de Desenvolvimento</button>
+      <button class="tablink" onclick="openTab(event, 'design')">Projetos de Design</button>
+    </div>
+
+    <!-- Conteúdo das abas -->
+    <div id="dev" class="tabcontent">
+      <h3>Projetos de Desenvolvimento</h3>
+      <div class="projeto-container">
+        <div class="projeto">
+          <img src="/images/image copy 9.png" alt="Projeto Dev 1" onclick="openModal(this)">
+          <img src="/images/image copy 8.png" alt="Projeto Dev 2" onclick="openModal(this)">
+          <h4>Projeto Back-end Java </h4>
+          <p>Este projeto é uma aplicação Spring Boot para gerenciar dispositivos e seus logs. Ele fornece uma API REST para criar, atualizar, deletar e buscar dispositivos, além de registrar logs associados a esses dispositivos.</p>
+        </div>
+        <div class="projeto">
+          <img src="/images/image.png" alt="Projeto Dev 1" onclick="openModal(this)">
+          <img src="/images/image copy.png" alt="Projeto Dev 2" onclick="openModal(this)">
+          <h4>Projeto Back-end C# </h4>
+          <p>Este projeto é um chatbot desenvolvido em c# com integração ao google gemini para responder duvidas sobre e-commerce </p>
+        </div>
+        <div class="projeto">
+          <img src="/images/image copy 2.png" alt="Projeto Dev 3" onclick="openModal(this)">
+          <embed src="/12.pdf" class="pdf" alt="Projeto PDF" onclick="openPDF(event, '/12.pdf')">
+          <h4>Projeto Front-end</h4>
+          <p>Projeto que imita um site de canais com catalogos e descrição.</p>
+        </div>
+        <div class="projeto">
+          <img src="/images/image copy 6.png" alt="Projeto Dev 3" onclick="openModal(this)">
+          <img src="/images/image copy 5.png" alt="Projeto Dev 3" onclick="openModal(this)">
+          <h4>Projeto Java</h4>
+          <p>Solução permite aos usuários visualizar listas pré-definidas de habitats e animais marinhos em extinção</p>
+        </div>
+        <div class="projeto">
+          <img src="/images/image copy 7.png" alt="Projeto Dev 3" onclick="openModal(this)">
+          <h4>Projeto Java</h4>
+          <p>Projeto inspirado em lógica de uma conta bancária</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="design" class="tabcontent">
+      <h3>Projetos de Design</h3>
+      <div class="projeto-container">
+        <div class="projeto">
+          <img src="/images/JORNAL DE PROMOS ESQUENTA AGILE.png" alt="Projeto Design 1" onclick="openModal(this)">
+          <h4>Projeto de Design Agile</h4>
+          <p>Folder Agile produtos.</p>
+        </div>
+        <div class="projeto">
+          <img src="/images/instagram.png" alt="Projeto Design 2" onclick="openModal(this)">
+          <h4>Projeto de Design Agile</h4>
+          <p>Folder Agile e-mail.</p>
+        </div>
+        <div class="projeto">
+          <img src="/images/Esquenta .png" alt="Projeto Design 3" onclick="openModal(this)">
+          <h4>Projeto de Design Agile</h4>
+          <p>Stories Instagram Agile</p>
+        </div>
+        <div class="projeto">
+          <img src="/images/FULL BANNER SITE AGILE.png" alt="Projeto Design 4" onclick="openModal(this)">
+          <img src="/images/FULL BANNER SITE AGILE (2).png" alt="Projeto Design 5" onclick="openModal(this)">
+          <img src="/images/FULL BANNER SITE AGILE (3).png" alt="Projeto Design 6" onclick="openModal(this)">
+          <h4>Projetos de Design Agile</h4>
+          <p>Banner site Agile.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Modal para exibir imagem ou PDF em tamanho grande -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">  <!-- Aqui está a tag <img> para a imagem ampliada -->
+    <embed class="modal-content" id="pdf01" type="application/pdf" width="100%" height="600px" style="display: none;">
+    <div id="caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
